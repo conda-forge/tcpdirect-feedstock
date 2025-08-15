@@ -6,7 +6,7 @@ export CFLAGS="$CFLAGS -Wno-error"
 export ONLOAD_TREE=${SRC_DIR}/onload
 cd tcpdirect
 
-make -j${CPU_COUNT}
+make -j${CPU_COUNT} NDEBUG=1
 
 mkdir -p $PWD/release
 ln -sf $PWD/build/gnu_x86_64/bin $PWD/release/bin
