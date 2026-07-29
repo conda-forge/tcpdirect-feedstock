@@ -1,4 +1,4 @@
-{% set version = "9.2.0.9" %}
+{% set version = "9.2.1.5" %}
 {% set onload_commit = "6958af1c840490d0fb21ba8aa0d55368fe083cc4" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://github.com/Xilinx-CNS/tcpdirect/archive/refs/tags/tcpdirect-{{ version }}.tar.gz
-    sha256: 3fee39cdeb610a4ead126ff73c192def59586ed7fcc69f029bede6ae86babaae
+    sha256: a929265d4f0873a3ed4773b5780a2b07992b410e398d30dad3e62603ad60ec21
     folder: tcpdirect
     patches:
       - install.diff
